@@ -69,15 +69,6 @@
         <button type="button" class="btn hero-button" data-modal-open>
           Замовити послугу
         </button>
-        <div class="hero-backdrop is-hidden" data-modal>
-          <div class="hero-modal">
-            <button type="button" class="modal-btn-close" data-modal-close>
-              <svg class="modal-icon-close" width="11" height="11">
-                <use href="./images/symbol-defs.svg#icon-close"></use>
-              </svg>
-            </button>
-          </div>
-        </div>
       </section>
 
       <section class="section features">
@@ -504,9 +495,48 @@
             </li>
           </ul>
         </div>
+        <form class="subscription-form">
+          <label for="email">Підпишіться на розсилку</label>
+          <input type="email" name="email" id="email" placeholder="E-mail" />
+          <button type="submit">Підписатися</button>
+        </form>
       </div>
     </footer>
-
+    <div class="hero-backdrop is-hidden" data-modal>
+      <div class="modal">
+        <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
+        <form class="modal-form">
+          <label for="name">Ім'я</label>
+          <input type="text" name="name" id="name" class="modal-form-name" />
+          <label for="tel">Телефон</label>
+          <input type="tel" name="tel" id="tel" class="modal-form-tel" />
+          <label for="email">Пошта</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="modal-form-email"
+          />
+          <label for="comment">Коментар</label>
+          <textarea
+            name="comment"
+            id="comment"
+            class="modal-form-comment"
+          ></textarea>
+          <input type="checkbox" name="policy-check" id="policy" />
+          <label for="policy"
+            >Погоджуюся з розсилкою та приймаю
+            <a href="">Умови договору</a></label
+          >
+          <button type="submit">Відправити</button>
+        </form>
+        <button type="button" class="modal-btn-close" data-modal-close>
+          <svg class="modal-icon-close" width="11" height="11">
+            <use href="./images/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>
