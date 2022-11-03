@@ -686,6 +686,8 @@ img {
   margin-left: 93px;
 }
 
+/* ФОРМА ПІДПИСКИ */
+
 .subscription-wrapper {
   display: flex;
   align-items: center;
@@ -729,6 +731,8 @@ img {
 .subscription-btn:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
+
+/* МОДАЛЬНЕ ВІКНО */
 
 .hero-backdrop {
   position: fixed;
@@ -857,20 +861,23 @@ img {
 
 .modal-checkbox-label {
   position: relative;
-  display: block;
+
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  justify-content: end;
 
   margin-bottom: 30px;
 }
 
 .modal-checkbox {
-  opacity: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
 .checkbox-icon-none {
   position: absolute;
+  /* display: inline-block; */
   top: 0;
   left: 0;
 
@@ -881,6 +888,7 @@ img {
 
 .checkbox-icon {
   position: absolute;
+  /* display: inline-block; */
   top: 0;
   left: 0;
 
@@ -901,6 +909,7 @@ img {
 
 .modal-checkbox-link {
   color: var(--accent-color);
+  margin-left: 5px;
 }
 
 .modal-btn-submit {
